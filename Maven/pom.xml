@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ✅ SPRING BOOT PARENT (THIS FIXES YOUR ERROR) -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.1</version>
+        <relativePath/>
+    </parent>
+
+    <!-- REQUIRED PROJECT COORDINATES -->
+    <groupId>com.example</groupId>
+    <artifactId>maven-lab</artifactId>
+    <version>1.0.0</version>
+
+    <name>maven-lab</name>
+    <description>Spring Boot Maven Lab</description>
+
+    <!-- DEPENDENCIES -->
+    <dependencies>
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.12.0</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-text</artifactId>
+    <version>1.10.0</version>
+</dependency>
+
+
+    </dependencies>
+
+    <!-- SPRING BOOT PLUGIN -->
+     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build> 
+
+</project>
