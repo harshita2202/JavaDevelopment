@@ -21,4 +21,10 @@ scopes
 profiles
   ├─ environment-specific configs
 
+->
+plugies are use to generate FAT JAR file , which includes all the dependencies and help the app to run.
+first - mvn clean
+second - mvn package
+third - java -jar target\maven-lab-1.0.0.jar
+ 
 
