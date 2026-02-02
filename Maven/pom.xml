@@ -18,13 +18,14 @@
     <groupId>com.example</groupId>
     <artifactId>maven-lab</artifactId>
     <version>1.0.0</version>
-
+    <packaging>jar</packaging>
     <name>maven-lab</name>
     <description>Spring Boot Maven Lab</description>
 
     <!-- DEPENDENCIES -->
     <dependencies>
-<dependency>
+    <!-- they were to check the dependency tree, to see how mave handels version conflit  -->
+<!-- <dependency>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-lang3</artifactId>
     <version>3.12.0</version>
@@ -34,8 +35,18 @@
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-text</artifactId>
     <version>1.10.0</version>
-</dependency>
+</dependency> -->
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
